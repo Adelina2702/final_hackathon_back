@@ -1,28 +1,28 @@
 module.exports = {
   get: {
-    tags: ["Product"],
-    description: "get one product",
-    operationId: "getProduct",
+    tags: ["Comment"],
+    description: "get one comment",
+    operationId: "getComment",
     parameters: [
       {
         name: "id",
         in: "path",
         schema: {
           type: "number",
-          description: "product id",
+          description: "comment id",
           example: "1",
         },
         required: true,
-        description: "A product id",
+        description: "A comment id",
       },
     ],
     responses: {
       200: {
-        description: "one product",
+        description: "one comment",
         content: {
           "application/json": {
             schema: {
-              $ref: "#/components/schemas/Product",
+              $ref: "#/components/schemas/Comment",
             },
           },
         },

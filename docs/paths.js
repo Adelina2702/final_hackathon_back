@@ -1,9 +1,11 @@
-const products = require("./products");
 const users = require("./users");
+const products = require("./products");
+// const comments = requi("./comments");
 
 module.exports = {
-    paths: {
-        ...users,
-        ...products,
-    }
-}
+  paths: {
+    ...users,
+    ...products,
+    // ...comments,
+  },
+};

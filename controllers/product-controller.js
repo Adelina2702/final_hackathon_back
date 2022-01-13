@@ -31,6 +31,8 @@ const getAll = async (req, res, next) => {
     res.status(404).json({ message: "category not found" });
   }
 };
+
+
 const getOne = async (req, res, next) => {
   try {
     // let { q, page, limit, category } = req.query;

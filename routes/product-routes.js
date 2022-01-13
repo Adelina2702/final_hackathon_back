@@ -13,6 +13,8 @@ router.delete(
   checkPermission(Product),
   ProductController.deleteOne
 );
+
+
 router.get("/", ProductController.getAll);
 router.get("/:id", ProductController.getOne);
 router.patch("/:id", auth,
